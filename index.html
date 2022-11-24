@@ -29,7 +29,7 @@
       >
         <div class="navbar-brand">
           <a
-            class="navbar-item has-text-white title is-2"
+            class="navbar-item has-text-white title is-2 mb-0"
             href="https://bulma.io"
           >
             <i class="fa-solid fa-wallet mr-2"></i>
@@ -61,7 +61,7 @@
                 <i class="fa-solid fa-tag ml-2"></i>
               </a>
               <a class="button is-primary">
-                Reportes>
+                Reportes
                 <i class="fa-solid fa-chart-pie ml-2"></i>
               </a>
             </div>
@@ -70,32 +70,67 @@
       </nav>
     </header>
     <main class="has-background-light">
-
       <section class="container pt-6">
-
-        <div class="columns mt-4">
-
-          <div class="column is-4 has-background-light">
+        <div class="columns mt-4 is-flex is-justify-content-center">
+          <div class="column is-3 has-background-light">
             <div class="box pb-2">
-              <h3>Balance</h3>
-              <p>Gastos</p>
-              <p>Ganancia</p>
-              <p>Total</p>
+              <p class="title is-3 is-spaced">Balance</p>
+              <div class="is-flex is-justify-content-space-between">
+                <p class="subtitle is-5">Ganancia</p>
+                <span class="has-text-success">+$0</span>
+              </div>
+              <div class="is-flex is-justify-content-space-between">
+                <p class="subtitle is-5">Gastos</p>
+                <span class="has-text-danger">-$0</span>
+              </div>
+              <div class="is-flex is-justify-content-space-between">
+                <h4 class="subtitle is-4">Total</h4>
+                <span class="has-text-weight-bold">$0</span>
+              </div>
             </div>
             <div class="box pt-2">
-              <h3>Filtros</h3>
+              <div class="is-flex is-justify-content-space-between">
+                <h3 class="title is-3">Filtros</h3>
+                <button class="button is-white">Ocultar Filtros</button>
+              </div>
+              <div>
+                <div>
+                <h4 class="title is-6 has-text-weight-bold mb-2">Tipo</h4>
+                <div class="select">
+                  <select>
+                    <option>Todos</option>
+                    <option>Gastos</option>
+                    <option>Ganancia</option>
+                  </select>
+                </div>
+              </div>
+                <div class="mt-4">
+                  <h4 class="title is-6 has-text-weight-bold mb-2">Categoría</h4>
+                  <div class="select">
+                    <select>
+                      <option>Todos</option>
+                      <option>Comidas</option>
+                      <option>Servicios</option>
+                      <option>Salidas</option>
+                      <option>Educacion</option>
+                      <option>Transporte</option>
+                      <option>Trabajo</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="column is-7 m-3 has-background-white box">
             <div class="is-flex m-4 is-justify-content-space-between">
-            <h3>Operaciones</h3>
-            <button class="button is-primary">+ Nueva operación</button>
+              <h3 class="title is-3">Operaciones</h3>
+              <button class="button is-primary">+ Nueva operación</button>
             </div>
-            <div class="image is-256x256 m-6">
-              <img  src="imagenes/balance-a.svg" alt="" />
+            <div class="image m-6">
+              <img src="imagenes/balance-a.svg" alt="" />
             </div>
-            <div class="has-text-centered  m-5">
+            <div class="has-text-centered m-5">
               <h4 class="has-text-weight-bold m-5">Sin Resultados</h4>
               <p>Cambia los filtros o agrega operaciones</p>
             </div>
