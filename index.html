@@ -70,17 +70,18 @@
       </nav>
     </header>
     <main class="has-background-light">
+      <!-- Seccion Balance -->
       <section class="container pt-6">
         <div class="columns mt-4 is-flex is-justify-content-center">
           <div class="column is-3 has-background-light">
             <div class="box pb-2">
-              <p class="title is-3 is-spaced">Balance</p>
+              <h4 class="title is-3 is-spaced">Balance</h4>
               <div class="is-flex is-justify-content-space-between">
-                <p class="subtitle is-5">Ganancia</p>
+                <h4 class="subtitle is-5">Ganancia</h4>
                 <span class="has-text-success">+$0</span>
               </div>
               <div class="is-flex is-justify-content-space-between">
-                <p class="subtitle is-5">Gastos</p>
+                <h4 class="subtitle is-5">Gastos</h4>
                 <span class="has-text-danger">-$0</span>
               </div>
               <div class="is-flex is-justify-content-space-between">
@@ -95,29 +96,51 @@
               </div>
               <div>
                 <div>
-                <h4 class="title is-6 has-text-weight-bold mb-2">Tipo</h4>
-                <div class="select">
-                  <select>
-                    <option>Todos</option>
-                    <option>Gastos</option>
-                    <option>Ganancia</option>
-                  </select>
+                  <h4 class="title is-6 has-text-weight-bold mb-2">Tipo</h4>
+                  <div class="select">
+                    <select>
+                      <option>Todos</option>
+                      <option>Gastos</option>
+                      <option>Ganancia</option>
+                    </select>
+                  </div>
                 </div>
-              </div>
                 <div class="mt-4">
-                  <h4 class="title is-6 has-text-weight-bold mb-2">Categoría</h4>
+                  <h4 class="title is-6 has-text-weight-bold mb-2">
+                    Categoría
+                  </h4>
                   <div class="select">
                     <select>
                       <option>Todos</option>
                       <option>Comidas</option>
                       <option>Servicios</option>
                       <option>Salidas</option>
-                      <option>Educacion</option>
+                      <option>Educación</option>
                       <option>Transporte</option>
                       <option>Trabajo</option>
                     </select>
                   </div>
                 </div>
+                <div class="mt-4">
+                  <label class="label" for="ip-date">Desde</label>
+                  <input class="input" id="ip-date" type="date">
+                </div>
+                <div class="mt-4">
+                  <h4 class="title is-6 has-text-weight-bold mb-2">
+                    Ordenar por
+                  </h4>
+                  <div class="select">
+                    <select>
+                      <option>Más reciente</option>
+                      <option>Menos reciente</option>
+                      <option>Mayor monto</option>
+                      <option>Menor monto</option>
+                      <option>A/Z</option>
+                      <option>Z/A</option>
+                    </select>
+                  </div>
+                </div>
+                
               </div>
             </div>
           </div>
@@ -136,6 +159,51 @@
             </div>
           </div>
         </div>
+      </section>
+      <section class="container pt-6">
+        <div class="box">
+          <h2 class="title is-2 has-text-weight-bold m-4">Nueva Operación</h2>
+          <div class="mt-4">
+            <label class="label" for="ipt-operations">Descripción</label>
+            <input class="input" id="ipt-operations" type="text" >
+          </div>
+          <div class="mt-4">
+            <label class="label" for="ipt-amount">Monto</label>
+            <input class="input" id="ipt-amount" type="number" value="8">
+          </div>
+          <div class="mt-4">
+            <h4 class="title is-6 has-text-weight-bold mb-2">Tipo</h4>
+            <div class="select">
+              <select>
+                <option>Gastos</option>
+                <option>Ganancia</option>
+              </select>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h4 class="title is-6 has-text-weight-bold mb-2">Categorías</h4>
+            <div class="select">
+              <select>
+                <option>Comidas</option>
+                <option>Servicios</option>
+                <option>Salidas</option>
+                <option>Educación</option>
+                <option>Transporte</option>
+                <option>Trabajo</option>
+              </select>
+            </div>
+          </div>
+          <div class="mt-4">
+            <label class="label" for="ip-date-new">Fecha</label>
+            <input class="input" id="ip-date-new" type="date" >
+          </div>
+          <div class="m-6 is-flex is-justify-content-flex-end">
+            <button class="button is-light">Cancelar</button>
+            <button class="button is-primary">Agregar</button>
+          </div>
+        </div>
+        
+
       </section>
     </main>
   </body>
